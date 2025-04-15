@@ -6,7 +6,6 @@ public class Main {
     // Push = Add an element to the top of the stack
     // Pop = Remove the top element from the stack
     // Peek = Get the top element without removing it
-
     
 
 }

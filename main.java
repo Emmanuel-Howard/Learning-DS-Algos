@@ -1,6 +1,7 @@
 import java.util.Stack;
 import java.util.Queue;
 import java.util.LinkedList;
+import java.util.PriorityQueue;
 
 public class main {
 
@@ -27,7 +28,7 @@ public class main {
         System.out.println(stack.search("Happy Wheels")); // Search for an element (Happy Wheels) and return its position from the top of the stack
     ------------------------------------------------------------------------------------------------------------------------------------------------------------------------
         */
-    
+        /*
         // Queue = FIFO (First In First Out) data structure (Ex. Line of ppl). A linear data strucutre that stores items in the order they were added.
         // Enqueue = Add an element to the end of the queue
         // Dequeue = Remove the first element from the queue
@@ -44,6 +45,25 @@ public class main {
 
         System.out.println(queue.peek()); // Peek at the first element in the queue (Bordelands)
         System.out.println(queue.isEmpty()); // Check if the queue is empty (false)
+    ------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+        */
+        
+        // Priority Queue = A data structure that stores elements in a specific order based on their priority. 
+        // Elements with higher priority are dequeued before elements with lower priority.
+
+        Queue<Double> queue = new PriorityQueue<>(); // Create a Priority queue of doubles
+        queue.offer(3.0);
+        queue.offer(1.5);
+        queue.offer(2.0);
+        queue.offer(4.5);
+
+        while (!queue.isEmpty()) {
+            System.out.println(queue.poll()); // Dequeue (remove) the first element from the queue and print it
+        }
+
+        // Output: 1.5, 2.0, 3.0, 4.5 (in ascending order)
+
+        
 
     }
 }
